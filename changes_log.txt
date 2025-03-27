@@ -1,0 +1,8 @@
+# Changes Log
+
+## 2025-03-27
+- Refactored `app/services/api.ts` to use the OpenAI npm package instead of fetch API
+  - Added import for OpenAI from the openai package
+  - Created a new helper function `createOpenAIClient` to initialize the OpenAI client with proper configuration
+  - Modified the `sendMessage` function to use the OpenAI SDK for OpenAI provider requests
+  
